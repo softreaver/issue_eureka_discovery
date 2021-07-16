@@ -1,0 +1,121 @@
+"2021-07-16 12:51:09,556 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting serviceRegisterApplication using Java 11.0.11 on softreaver-home with PID 17661 (/home/softreaver/dev/projects/workspace_eclipse/eureka_manual_register/eureka-service-register/target/classes started by softreaver in /home/softreaver/dev/projects/workspace_eclipse/eureka_manual_register/eureka-service-register)
+""2021-07-16 12:51:09,559 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: dev
+""2021-07-16 12:51:09,607 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-07-16 12:51:09,609 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-07-16 12:51:10,486 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=c2692a81-58ef-3d24-8c3d-5f3f3f6764f9
+""2021-07-16 12:51:10,943 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9999 (http)
+""2021-07-16 12:51:10,952 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+""2021-07-16 12:51:10,953 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.45]
+""2021-07-16 12:51:11,033 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+""2021-07-16 12:51:11,034 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1424 ms
+""2021-07-16 12:51:11,438 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2021-07-16 12:51:11,637 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+""2021-07-16 12:51:11,673 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+""2021-07-16 12:51:11,737 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+""2021-07-16 12:51:11,876 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+""2021-07-16 12:51:11,937 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+""2021-07-16 12:51:12,008 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+""2021-07-16 12:51:12,033 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+""2021-07-16 12:51:12,038 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+""2021-07-16 12:51:12,059 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+""2021-07-16 12:51:12,059 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+""2021-07-16 12:51:12,059 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+""2021-07-16 12:51:12,059 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+""2021-07-16 12:51:12,060 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+""2021-07-16 12:51:12,060 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+""2021-07-16 12:51:12,060 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+""2021-07-16 12:51:12,290 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+""2021-07-16 12:51:12,292 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+""2021-07-16 12:51:12,295 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2021-07-16 12:51:12,301 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1626432672300 with initial instances count: 0
+""2021-07-16 12:51:12,303 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application SERVICEREGISTER-SERVICE with eureka with status UP
+""2021-07-16 12:51:12,304 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1626432672304, current=UP, previous=STARTING]
+""2021-07-16 12:51:12,306 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999: registering service...
+""2021-07-16 12:51:12,340 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9999 (http) with context path ''
+""2021-07-16 12:51:12,342 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9999
+""2021-07-16 12:51:12,343 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+""2021-07-16 12:51:12,361 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+""2021-07-16 12:51:12,381 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+""2021-07-16 12:51:12,403 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999 - registration status: 204
+""2021-07-16 12:51:12,488 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started serviceRegisterApplication in 3.369 seconds (JVM running for 4.089)
+""2021-07-16 12:51:42,293 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+""2021-07-16 12:51:42,293 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+""2021-07-16 12:51:42,293 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+""2021-07-16 12:51:42,294 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+""2021-07-16 12:51:42,294 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+""2021-07-16 12:51:42,294 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+""2021-07-16 12:51:42,294 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+""2021-07-16 12:51:42,305 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+""2021-07-16 12:53:06,126 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9999-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-07-16 12:53:06,126 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9999-exec-1] Initializing Servlet 'dispatcherServlet'
+""2021-07-16 12:53:06,128 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9999-exec-1] Completed initialization in 1 ms
+""2021-07-16 12:54:32,505 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-5] Unregistering application SERVICEREGISTER-SERVICE with eureka with status DOWN
+""2021-07-16 12:54:32,506 INFO com.netflix.discovery.DiscoveryClient$3 [Thread-5] Saw local status change event StatusChangeEvent [timestamp=1626432872506, current=DOWN, previous=UP]
+""2021-07-16 12:54:32,506 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999: registering service...
+""2021-07-16 12:54:32,512 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999 - registration status: 204
+""2021-07-16 12:54:32,531 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
+""2021-07-16 12:54:32,534 INFO com.netflix.discovery.DiscoveryClient [Thread-5] Shutting down DiscoveryClient ...
+""2021-07-16 12:54:35,537 INFO com.netflix.discovery.DiscoveryClient [Thread-5] Unregistering ...
+""2021-07-16 12:54:35,542 INFO com.netflix.discovery.DiscoveryClient [Thread-5] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999 - deregister  status: 200
+""2021-07-16 12:54:35,548 INFO com.netflix.discovery.DiscoveryClient [Thread-5] Completed shut down of DiscoveryClient
+""2021-07-16 12:56:19,989 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting serviceRegisterApplication using Java 11.0.11 on softreaver-home with PID 18001 (/home/softreaver/dev/projects/workspace_eclipse/eureka_manual_register/eureka-service-register/target/classes started by softreaver in /home/softreaver/dev/projects/workspace_eclipse/eureka_manual_register/eureka-service-register)
+""2021-07-16 12:56:19,992 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: dev
+""2021-07-16 12:56:20,047 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-07-16 12:56:20,047 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-07-16 12:56:20,959 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=c2692a81-58ef-3d24-8c3d-5f3f3f6764f9
+""2021-07-16 12:56:21,400 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9999 (http)
+""2021-07-16 12:56:21,410 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+""2021-07-16 12:56:21,410 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.45]
+""2021-07-16 12:56:21,483 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+""2021-07-16 12:56:21,484 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1436 ms
+""2021-07-16 12:56:21,907 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2021-07-16 12:56:22,090 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+""2021-07-16 12:56:22,124 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+""2021-07-16 12:56:22,183 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+""2021-07-16 12:56:22,312 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+""2021-07-16 12:56:22,371 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+""2021-07-16 12:56:22,443 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+""2021-07-16 12:56:22,468 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+""2021-07-16 12:56:22,473 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+""2021-07-16 12:56:22,493 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+""2021-07-16 12:56:22,494 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+""2021-07-16 12:56:22,494 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+""2021-07-16 12:56:22,494 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+""2021-07-16 12:56:22,494 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+""2021-07-16 12:56:22,495 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+""2021-07-16 12:56:22,495 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+""2021-07-16 12:56:22,633 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+""2021-07-16 12:56:22,635 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+""2021-07-16 12:56:22,638 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2021-07-16 12:56:22,643 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1626432982642 with initial instances count: 0
+""2021-07-16 12:56:22,644 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application SERVICEREGISTER-SERVICE with eureka with status UP
+""2021-07-16 12:56:22,645 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1626432982645, current=UP, previous=STARTING]
+""2021-07-16 12:56:22,647 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999: registering service...
+""2021-07-16 12:56:22,671 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9999 (http) with context path ''
+""2021-07-16 12:56:22,672 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9999
+""2021-07-16 12:56:22,674 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+""2021-07-16 12:56:22,682 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999 - registration status: 204
+""2021-07-16 12:56:22,692 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+""2021-07-16 12:56:22,711 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+""2021-07-16 12:56:22,817 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started serviceRegisterApplication in 3.223 seconds (JVM running for 3.913)
+""2021-07-16 12:56:29,314 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9999-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-07-16 12:56:29,314 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9999-exec-1] Initializing Servlet 'dispatcherServlet'
+""2021-07-16 12:56:29,315 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9999-exec-1] Completed initialization in 1 ms
+""2021-07-16 12:56:52,636 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+""2021-07-16 12:56:52,636 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+""2021-07-16 12:56:52,636 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+""2021-07-16 12:56:52,636 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+""2021-07-16 12:56:52,637 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+""2021-07-16 12:56:52,637 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+""2021-07-16 12:56:52,637 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+""2021-07-16 12:56:52,647 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+""2021-07-16 12:57:04,152 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringContextShutdownHook] Unregistering application SERVICEREGISTER-SERVICE with eureka with status DOWN
+""2021-07-16 12:57:04,152 INFO com.netflix.discovery.DiscoveryClient$3 [SpringContextShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1626433024152, current=DOWN, previous=UP]
+""2021-07-16 12:57:04,153 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999: registering service...
+""2021-07-16 12:57:04,161 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999 - registration status: 204
+""2021-07-16 12:57:04,185 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+""2021-07-16 12:57:04,188 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Shutting down DiscoveryClient ...
+""2021-07-16 12:57:07,192 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Unregistering ...
+""2021-07-16 12:57:07,197 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] DiscoveryClient_SERVICEREGISTER-SERVICE/softreaver-home:serviceRegister-service:9999 - deregister  status: 200
+""2021-07-16 12:57:07,204 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Completed shut down of DiscoveryClient
+"

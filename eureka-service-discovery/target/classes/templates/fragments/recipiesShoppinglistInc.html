@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div th:fragment="recipeFragment (recipe)" style="page-break-after: always;">
+			<section class="recipe-head">
+				<figure>
+					<img th:src="@{${recipe.imageURL}}" />
+					<figcaption>
+						<span class="recipe-name-span" th:text="${recipe.name}"></span>
+						<img th:src="${assets_img_duration_icon}" />
+						<span th:text="${recipe.duration} + ' min'"></span>
+						<img th:src="${assets_img_servings_icon}" />
+						<span th:text="${recipe.servings}"></span>
+					</figcaption>				
+				</figure>
+			</section>
+			<ul class="ingredients-list">
+				<li th:each="ingredient : ${recipe.ingredientsList}">
+					<span th:text="${ingredient.quantity} + ${ingredient.unit?.text} + ' ' + ${ingredient.name}"></span>
+				</li>
+			</ul>
+			<p>Etapes :</p>
+			<ol class="instructions-list">
+				<li th:each="instructionStep : ${recipe.instructions}">
+					<span th:text="${instructionStep.instruction}"></span>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>

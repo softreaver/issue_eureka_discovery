@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css"
+	th:href="${assets_css_PDFStyle}">
+
+<style th:utext="${fontsDeclaration}">
+</style>
+
+<title>Liste de course et recettes</title>
+</head>
+<body>
+	<header>
+		<img th:src="${assets_img_head}">
+	</header>
+	<section id="shopping-list-container" style="page-break-after: always;">
+		<h2>Liste de course :</h2>
+		<ul id="shopping-list">
+			<li th:each="ingredient : ${shoppinglist.ingredients}">
+				<span th:text="'  ' + ${ingredient.quantities} + ' ' + ${ingredient.name}"></span>
+			</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="recipies-list">
+		<h2>Mes recettes :</h2>
+		<div th:each="day : ${daysList}">
+			<div class="day-container" th:unless="${#lists.isEmpty(day.menusList)}">	
+				<h2 th:text="'Jour ' + ${day.number}"></h2>
+				<div th:each="menu : ${day.menusList}">
+					<div th:if="${menu.starter}">
+						<h3 th:object="${menu}" th:text="'Entrée : ' + *{starter.name}"></h3>
+						<div th:replace="${templates_fragments_recipiesShoppinglistInc} :: recipeFragment (${menu.starter})"></div> 
+					</div>
+					<div th:if="${menu.mainCourse}">
+						<h3 th:object="${menu}" th:text="'Plat principal : ' + *{mainCourse.name}"></h3>
+						<div th:replace="${templates_fragments_recipiesShoppinglistInc} :: recipeFragment (${menu.mainCourse})"></div> 
+					</div>
+					<div th:if="${menu.dessert}">
+						<h3 th:object="${menu}" th:text="'Dessert : ' + *{dessert.name}"></h3>
+						<div th:replace="${templates_fragments_recipiesShoppinglistInc} :: recipeFragment (${menu.dessert})"></div> 
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+</body>
+</html>
