@@ -1,5 +1,5 @@
 # issue_eureka_discovery
-A minimal repository for an issue I have using eureka register method
+A minimal repository for an issue when using eureka register method
 
 **NOTE : This project is using Maven to pull dependencies.**
 
